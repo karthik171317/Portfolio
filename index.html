@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bodyElement">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+        <symbol id="hamburger-menu" viewBox="0 0 50 50">
+            <path xmlns="http://www.w3.org/2000/svg"
+                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 30 30">
+            <path
+                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 30 30">
+            <path
+                d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 8.6484375 9 L 13.259766 9 L 15.951172 12.847656 L 19.28125 9 L 20.732422 9 L 16.603516 13.78125 L 21.654297 21 L 17.042969 21 L 14.056641 16.730469 L 10.369141 21 L 8.8945312 21 L 13.400391 15.794922 L 8.6484375 9 z M 10.878906 10.183594 L 17.632812 19.810547 L 19.421875 19.810547 L 12.666016 10.183594 L 10.878906 10.183594 z" />
+        </symbol>
+        <symbol id="insta" viewBox="0 0 30 30">
+            <path
+                d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" />
+        </symbol>
+        <symbol id="youtube" viewBox="0 0 30 30">
+            <path
+                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z" />
+        </symbol>
+        <symbol id="sprite-phone" viewBox="0 0 32 32">
+            <path
+                d="M11.945 4a1.892 1.892 0 011.705 1.105c.2.408.383.821.571 1.233l.221.486.147.319c.118.254.237.507.344.765a1.792 1.792 0 01-.46 2.075l-.355.329c-.506.466-1.011.933-1.529 1.386a2.723 2.723 0 00-.839 3c.037.108.072.218.107.327a10.236 10.236 0 00.406 1.106 15.753 15.753 0 002.1 3.439 8.523 8.523 0 00.875.9l.125.116a2.592 2.592 0 001.8.713 2.947 2.947 0 00.9-.144c.375-.12.753-.231 1.131-.342.456-.134.911-.268 1.363-.415a1.947 1.947 0 012.179.707q.859 1.194 1.745 2.367a1.839 1.839 0 01-.2 2.475l-.5.465c-.238.225-.477.451-.723.667a3.307 3.307 0 01-2.243.921 4.082 4.082 0 01-1.069-.154 10.973 10.973 0 01-4.241-2.386 21.827 21.827 0 01-3.878-4.5 31.969 31.969 0 01-3.27-6.119 17.028 17.028 0 01-1.09-4.029c-.044-.337-.067-.7-.091-1.084-.011-.164-.021-.328-.033-.491A9.564 9.564 0 017.427 7a3.175 3.175 0 012.107-2.361 17.01 17.01 0 011.941-.581 1.938 1.938 0 01.47-.058m0-2a3.94 3.94 0 00-.945.115 19.261 19.261 0 00-2.165.65A5.149 5.149 0 005.49 6.5a11.688 11.688 0 00-.348 2.8c.046.592.065 1.188.142 1.775a19.088 19.088 0 001.211 4.5 34.189 34.189 0 003.471 6.5 23.858 23.858 0 004.237 4.9 12.965 12.965 0 005.015 2.8 6.041 6.041 0 001.6.225 5.276 5.276 0 003.554-1.413c.427-.376.834-.776 1.253-1.161a3.835 3.835 0 00.445-5.153q-.873-1.157-1.719-2.331a3.945 3.945 0 00-4.42-1.441c-.823.268-1.66.491-2.484.753a.929.929 0 01-.288.05.61.61 0 01-.432-.175 8.277 8.277 0 01-.81-.812 13.743 13.743 0 01-1.828-3c-.182-.4-.3-.836-.443-1.256a.726.726 0 01.262-.853c.653-.57 1.286-1.163 1.923-1.75a3.8 3.8 0 00.952-4.313c-.162-.388-.345-.767-.52-1.149-.267-.585-.529-1.173-.807-1.752A3.881 3.881 0 0011.945 2z" />
+        </symbol>
+        <symbol id="sprite-gmail" viewBox="0 0 32 32">
+            <path
+                d="M29.993 9.932V9.88A4 4 0 0026 6H6a4 4 0 00-3.988 3.88v.052C2.012 9.95 2 9.977 2 10v12a4 4 0 004 4h20a4 4 0 004-4V10c0-.023-.006-.045-.007-.068zM6 8h20a2 2 0 011.913 1.449L16 15.864 4.087 9.449A2 2 0 016 8zm20 16H6a2 2 0 01-2-2V11.674l11.526 6.206a1 1 0 00.948 0L28 11.674V22a2 2 0 01-2 2z" />
+        </symbol>
+        <symbol id="sprite-location" viewBox="0 0 32 32">
+            <path
+                d="M16.007 22.8a1 1 0 01-.794-.392l-3.893-5.082c-1.446-1.865-2.942-3.793-2.942-6.594a7.623 7.623 0 1115.244 0 9.605 9.605 0 01-2.355 5.725c-.56.757-1.128 1.509-1.7 2.261L16.806 22.4a1 1 0 01-.8.4zM16 5a5.617 5.617 0 00-5.622 5.732c0 2.116 1.169 3.623 2.522 5.368l3.1 4.04 1.976-2.626c.564-.748 1.128-1.5 1.685-2.248 1.178-1.588 1.962-2.967 1.962-4.534A5.617 5.617 0 0016 5z" />
+            <circle cx="16" cy="10" r="2.5" />
+            <path
+                d="M16 29c-6.346 0-11.318-2.636-11.318-6A4.533 4.533 0 016.9 19.366c.185-.132.382-.26.589-.383a10.941 10.941 0 011.1-.569 1 1 0 01.817 1.825 8.952 8.952 0 00-.9.463q-.24.142-.456.3a2.77 2.77 0 00-1.373 2c0 1.892 3.827 4 9.318 4s9.318-2.108 9.318-4c0-1.063-1.164-1.907-1.857-2.315a8.842 8.842 0 00-.87-.446 1 1 0 01.818-1.825 10.963 10.963 0 011.067.548c1.832 1.078 2.842 2.512 2.842 4.038C27.318 26.364 22.346 29 16 29z" />
+        </symbol>
+        <symbol id="sprite-bio" viewBox="0 0 32 32">
+            <path
+                d="M12 14a6 6 0 10-6-6 6.006 6.006 0 006 6zm0-10a4 4 0 11-4 4 4 4 0 014-4zm3 12H9a7.008 7.008 0 00-7 7v7h20v-7a7.008 7.008 0 00-7-7zm5 12H4v-5a5.006 5.006 0 015-5h6a5.006 5.006 0 015 5zm11-14h-3v-3a1 1 0 00-2 0v3h-3a1 1 0 000 2h3v3a1 1 0 002 0v-3h3a1 1 0 000-2z" />
+        </symbol>
+    </svg>
+    <section class="mainBlock">
+        <div class="mainBlockInner">
+            <div class="container z-index-5">
+                <div class="headerSection">
+                    <div class="headerLogo">
+                        Portfolio
+                    </div>
+                    <div class="themeIcon" id="resumeBtn">
+                        <svg class="icon-20px iconsLightMode">
+                            <use xlink:href="#hamburger-menu"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="container z-index-3">
+                <div class="firstFold">
+                    <div class="d-flex firstFoldInner">
+                        <div class="stickyBlock">
+                            <div class="stickyBlockInner">
+                                <div class="profileImage">
+                                    <img src="./image/profile-photo.jpeg" alt="#" >
+                                </div>
+                                <div class="font-32px headingBlock">Ganta Karthik</div>
+                                <div class="bgLight btnBlock">
+                                    Full Stack Developer
+                                </div>
+                                <div class="d-flex socialIconBlock">
+                                    <div class="bgLight socialIcon vAlignMiddle">
+                                        <a href="https://www.linkedin.com/in/ganta-karthik-7b5264247" class="d-flex">
+                                            <img src="./image/linkedin.svg" alt="" class="icon-24px">
+                                        </a>
+                                    </div>
+                                    <div class="bgLight socialIcon vAlignMiddle">
+                                        <a href="https://github.com/karthik171317"  class="d-flex">
+                                            <img src="./image/git.svg" alt="" class="icon-24px">
+                                        </a>
+                                    </div>
+                                    <div class="bgLight socialIcon vAlignMiddle">
+                                        <a href="mailto:karthikkutty126@gmail.com"  class="d-flex">
+                                            <img src="./image/mail.svg" alt="" class="icon-24px">
+                                        </a>
+                                    </div>
+                                    <div class="bgLight socialIcon vAlignMiddle">
+                                        <a href="tel:9940295529"  class="d-flex">
+                                            <svg class="icon-24px iconsMode">
+                                                <use xlink:href="#sprite-phone"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="detailedBlock">
+                                    <div class="detailContent">
+                                        <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            <svg class="icon-20px iconsMode">
+                                                <use xlink:href="#sprite-phone"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                Phone
+                                            </div>
+                                            <div class="mainText">
+                                                9940295529
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="detailContent">
+                                        <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            <svg class="icon-20px iconsMode">
+                                                <use xlink:href="#sprite-gmail"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                Email
+                                            </div>
+                                            <div class="mainText">
+                                                karthikkutty126@gmail.com
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="detailContent">
+                                        <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            <svg class="icon-20px iconsMode">
+                                                <use xlink:href="#sprite-location"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                Location
+                                            </div>
+                                            <div class="mainText">
+                                                Chennai - 600082
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="detailContent">
+                                        <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            <svg class="icon-20px iconsMode">
+                                                <use xlink:href="#sprite-bio"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                Birthday
+                                            </div>
+                                            <div class="mainText">
+                                                Sep 13,2001
+                                            </div>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightSideBlock">
+                            <div class="topNavBlock">
+                                <ul class="nav  mb-3 topNavInnerBlock" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="topNavInner active" id="aboutBlock"
+                                            onclick="tabActiveEvent('about')">
+                                            <div class="contentBlock">
+                                                <!-- <span class="d-flex">@include('InnerBlock.themeSvg')</span> -->
+                                                <span>About</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="topNavInner" id="resumeBlock" onclick="tabActiveEvent('resume')">
+                                            <div class="contentBlock">
+                                               
+                                                <span>Resume</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="topNavInner" id="skillsBlock" onclick="tabActiveEvent('skills')">
+                                            <div class="contentBlock">
+                                                <!-- <span class="d-flex">@include('InnerBlock.themeSvg')</span> -->
+                                                <span>Skills</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="topNavInner" id="projectBlock" onclick="tabActiveEvent('project')">
+                                            <div class="contentBlock">
+                                                <span>Project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottomBlock">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane show" id="aboutBlockContent">
+
+                                        <div class="afterHeaderBlock">
+                                            <span>About</span>
+                                            <span class="afterHeaderBlockEle"></span>
+                                        </div>
+                                        <div class="d-flex subText mb-15px">
+                                            <span class="mb-15px">
+                                                A passionate Associate Full Stack Developer with 2.3 years of hands-on experience in designing, developing, and maintaining dynamic web applications. Skilled in creating user-friendly, responsive, and adaptive websites with enhanced crossbrowser compatibility and runtime efficiency.</span>
+                                            <span class="mb-15px">
+                                                Expertise in design, installation, testing, and maintenance of web
+                                                systems. Proficient in JavaScript, jQuery, AngularJS, TypeScript, Vue.js, PHP, and Laravel, with a strong focus on integrating modern frontend frameworks and robust backend systems. 
+                                                Proven ability to deliver scalable, high-performance solutions through responsive UI development, RESTful API integration, and clean, maintainable code. Passionate about solving complex problems, learning emerging technologies, and continuously improving development practices.
+                                            </span>
+                                            <span class="">
+                                               Seeking an opportunity to join a full stack development team to extend my expertise while working with experienced web development teams.
+                                            </span>
+                                        </div>
+                                        <div class="subHeading mt-30px mb-20px">What I DO!</div>
+                                        <div class="gridBlockParent">
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        UI & Visual Design
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Creating engaging web experiences with intuitive layouts using HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap, and Headless UI, ensuring a modern and accessible design system.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Responsive Design
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Developing fully responsive websites that adapt seamlessly to all screen sizes—from desktops to mobile devices—using flexbox, grid, and mobile-first strategies.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Front-End Development
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Building responsive and interactive user interfaces using JavaScript (ES6+), jQuery, AngularJS, TypeScript and Vue.js. I focus on performance, usability, and clean code architecture.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Back-End Development
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Building and maintaining scalable server-side applications using PHP and Laravel, implementing MVC architecture, routing, and middleware for secure and efficient systems.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        RESTful API Integration
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Integrating and consuming REST APIs using Axios, Fetch, AJAX, and handling JSON data to connect frontend interfaces with backend logic and external services.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Database Management
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Designing and managing relational databases using MySQL, including data modeling, query optimization, and maintaining data integrity across applications.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Debugging & Testing
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Utilizing tools like Chrome DevTools and console logging for efficient debugging. Proactively fixing UI and functionality issues to maintain app stability.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Performance Optimization
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                       Optimizing front-end performance by minimizing asset load, lazy loading components, and writing clean, efficient code that boosts load times and user experience.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock">
+                                                    <div class="titleText">
+                                                        Version Control
+                                                    </div>
+                                                    <p class="descriptionText">
+                                                        Managing changes to code and files over
+                                                        time using systems like Git, which allows collaboration,
+                                                        tracking changes, and reverting to previous versions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane" id="resumeBlockContent">
+                                        <div class="afterHeaderBlock">
+                                            <span>Resume</span>
+                                            <span class="afterHeaderBlockEle"></span>
+                                        </div>
+                                        <div class="gridBlockParent pt-4">
+                                            <div class="d-flex flex-column gap-20px">
+                                                <div class="d-flex">
+                                                    <!-- <span class="iconBlock mr-20px bgLight">@include('InnerBlock.themeSvg')</span> -->
+                                                    <span class="subHeading mb-0">Education</span>
+                                                </div>
+                                                <div class="designBlockContent">
+                                                    <div class="titleBlock">
+                                                        <div class="subText">2019 - 2022</div>
+                                                        <div class="titleText">
+                                                            Bachelor's Degree in Computer Application
+                                                        </div>
+                                                        <p class="descriptionText">
+                                                            Veltech Ranga Sanku Arts College, Avadi, TamilNadu.
+                                                        </p>
+                                                        <p class="subText">CGPA: 7.5</p>
+                                                    </div>
+                                                </div>
+                                                <div class="designBlockContent d-flex">
+                                                    <div class="titleBlock">
+                                                        <div class="subText">2017 - 2019</div>
+                                                        <div class="titleText">
+                                                            Higher Secondary
+                                                        </div>
+                                                        <p class="descriptionText">
+                                                            Government Higher Secondary School, G.K.M COLONY, Chennai, TamilNadu.
+                                                        </p>
+                                                        <p class="subText">Percentage: 61</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column gap-20px">
+                                                <div class="d-flex">
+                                                    <!-- <span class="iconBlock mr-20px bgLight">@include('InnerBlock.themeSvg')</span> -->
+                                                    <span class="subHeading mb-0">Experience</span>
+                                                </div>
+                                                <div class="designBlockContent">
+                                                    <div class="titleBlock">
+                                                        <div class="subText">2023 - 2025</div>
+                                                        <div class="titleText">
+                                                            Full Stack Developer
+                                                        </div>
+                                                        <p class="descriptionText">Netaxis IT Solutions (P) Ltd, Chennai, TamilNadu</p>
+                                                        <p class="subText">Experience : 2.3years</p>
+                                                    </div>
+                                                </div>
+                                                <div class="designBlockContent d-flex">
+                                                    <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                    <div class="titleBlock">
+                                                        <div class="subText">Oct 2022 - Feb 2023</div>
+                                                        <div class="titleText">
+                                                            Full Stack Developer Traning
+                                                        </div>
+                                                        <p class="descriptionText">
+                                                            I completed a 4.5 month Full Stack Developer
+                                                            training program at Netaxis IT Solutions
+                                                        </p>
+                                                        <p class="subText">
+                                                            The program provided comprehensive training
+                                                            in Full Stack Developement principles, frontend development, Backend development, and user experience design.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="designBlockContent">
+                                                    <div class="titleBlock">
+                                                        <div class="subText">Jan 2025 - present</div>
+                                                        <div class="titleText">
+                                                            Freelance Web Developer
+                                                        </div>
+                                                        <p class="descriptionText">SGR Creations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="skillsBlockContent">
+                                        <div class="afterHeaderBlock">
+                                            <span>Skills</span>
+                                            <span class="afterHeaderBlockEle"></span>
+                                        </div>
+                                        <!-- <div class="skillsImagesContent">
+                                            <img src="./image/skill.jpg" alt="skills">
+                                        </div> -->
+                                        <div class="gridBlockParent">
+                                            <div class="designBlockContent d-flex">
+                                                
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/html.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        HTML5
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/css.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                       CSS3
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/sass.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                       SCSS
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/bootstrap.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        Bootstrap
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/tailwind.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        Tailwind css
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/javascript.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        Javascript
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/jquery.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                      JQuery
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/angularjs.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        AngularJS
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/vuejs.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        Vue.js
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="designBlockContent d-flex">
+                                                <!-- <div class="icon-26px designIcon">@include('InnerBlock.themeSvg')</div> -->
+                                                <div class="titleBlock imageCenterAlign">
+                                                    <div class="skillsImages">
+                                                        <img src="./image/laravel.svg" alt="htmlImage" class="w-100">
+                                                    </div>
+                                                    <div class="titleText">
+                                                        Laravel framework
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane" id="projectBlockContent">
+                                        <div class="afterHeaderBlock">
+                                            <span>Project</span>
+                                            <span class="afterHeaderBlockEle"></span>
+                                        </div>
+                                        <div class="formContainer pt-4">
+                                            <div class="formContainerInner">
+                                                <div class="titleBlock">Own Project Build using AI</div>
+                                                <div class="mainText projectBlock"><a href="https://g-qr-code-generator.netlify.app/" style="color:#53bdeb;" target="_blank">Qr code Generator</a></div>
+                                                <div class="textIndent">
+                                                    A customizable web app that allows you to generate QR codes using provided Text or URL. The QR Code Generator web app was built using CURSOR AI in Vue.js. The project is version-controlled using GitHub and is deployed seamlessly on Netlify.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cvBlockMain" id="cvBlockMain"> 
+            <div class="closebtn z-index-21" id="resumeBtn">
+                <!-- <svg class="icon-20px iconsLightMode">
+                    <use xlink:href="#xclose"></use>
+                </svg> -->
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </div>
+            <div class="cvBtnBlockContainer">
+                <a href="./pdf/resume.pdf" class="downloadBtnBlock" download>Download My CV</a>
+            </div>
+        </div>
+    </section>
+    <script src='./js/editor.js'></script>
+
+</body>
+</html>

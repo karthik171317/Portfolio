@@ -1,0 +1,857 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+:root {
+  --primaryColorLight: #121120bf;
+  --primaryColor: #121120;
+  --viewport-height: 100vh;
+  --primaryBtnColor: #ff512f;
+  --textColor: #a6a6a6;
+  --border-light: #212425;
+  --c-primaryBorderColor: #b5b5b5;
+  --secondaryColor: linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+  --c-blockBorderRadius: 5px;
+  --c-primaryBorderRadius: 20px;
+  --c-secondaryBorderRadius: 10px;
+  --c-white: #ffffff;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.icon-10px {
+  width: 10px;
+  height: 10px;
+}
+
+.icon-11px {
+  width: 11px;
+  height: 11px;
+}
+
+.icon-12px {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-13px {
+  width: 13px;
+  height: 13px;
+}
+
+.icon-14px {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-15px {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-16px {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-17px {
+  width: 17px;
+  height: 17px;
+}
+
+.icon-18px {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-19px {
+  width: 19px;
+  height: 19px;
+}
+
+.icon-20px {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-21px {
+  width: 21px;
+  height: 21px;
+}
+
+.icon-22px {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-23px {
+  width: 23px;
+  height: 23px;
+}
+
+.icon-24px {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-25px {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-26px {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-27px {
+  width: 27px;
+  height: 27px;
+}
+
+.icon-28px {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-29px {
+  width: 29px;
+  height: 29px;
+}
+
+.icon-30px {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-31px {
+  width: 31px;
+  height: 31px;
+}
+
+.icon-32px {
+  width: 32px;
+  height: 32px;
+}
+
+.font-10px {
+  font-size: 10px;
+}
+
+.font-11px {
+  font-size: 11px;
+}
+
+.font-12px {
+  font-size: 12px;
+}
+
+.font-13px {
+  font-size: 13px;
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.font-15px {
+  font-size: 15px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.font-17px {
+  font-size: 17px;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.font-19px {
+  font-size: 19px;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-21px {
+  font-size: 21px;
+}
+
+.font-22px {
+  font-size: 22px;
+}
+
+.font-23px {
+  font-size: 23px;
+}
+
+.font-24px {
+  font-size: 24px;
+}
+
+.font-25px {
+  font-size: 25px;
+}
+
+.font-26px {
+  font-size: 26px;
+}
+
+.font-27px {
+  font-size: 27px;
+}
+
+.font-28px {
+  font-size: 28px;
+}
+
+.font-29px {
+  font-size: 29px;
+}
+
+.font-30px {
+  font-size: 30px;
+}
+
+.font-31px {
+  font-size: 31px;
+}
+
+.font-32px {
+  font-size: 32px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align_items_center {
+  align-items: center;
+}
+
+.justify_content_center {
+  justify-content: center;
+}
+
+.vAlignMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.mb-5px {
+  margin-bottom: 5px;
+}
+
+.mb-15px {
+  margin-bottom: 15px;
+}
+
+.mt-30px {
+  margin-top: 30px;
+}
+
+.mr-20px {
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .containerBlock {
+    max-width: 540px !important;
+  }
+}
+@media (max-width: 768px) {
+  .containerBlock {
+    max-width: 720px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerBlock {
+    max-width: 1200px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
+    padding: 60px 40px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mainBlock .mainBlockInner .firstFoldInner {
+    flex-direction: column;
+  }
+  .mainBlock .mainBlockInner .firstFold .stickyBlock {
+    width: 100% !important;
+    position: unset !important;
+    margin-bottom: 40px;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: unset !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock {
+    width: 100% !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock {
+    width: 100% !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
+    width: 100% !important;
+    padding: 40px 30px !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock {
+    font-size: 30px !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock .afterHeaderBlockEle::after {
+    width: 100px !important;
+  }
+}
+html {
+  font-size: 16px;
+  --ternaryColor: linear-gradient(180deg, #fa5252 0%, #e12a72 100%);
+  --bg-light: #000;
+}
+
+ul li{
+    list-style: none;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.topNavInner.contentBlock{
+  cursor: pointer;
+}
+.topNavInner.contentBlock.span{
+  cursor: pointer;
+}
+
+.iconBlock {
+  width: 30px;
+  height: 30px;
+}
+
+.tab-pane{
+  display: none;
+}
+.tab-pane.show{
+  display: block;
+}
+
+svg.iconsMode{
+    fill: #000;
+}
+svg.iconsLightMode{
+    fill: #fff;
+}
+
+.subHeading {
+  font-family: "Poppins", sans-serif;
+}
+
+.titleBlock .titleText {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.titleBlock .descriptionText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--textColor);
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body.bodyElement {
+  background-color: var(--primaryColor);
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+}
+
+.gap-20px {
+  gap: 20px;
+}
+
+.bgLight {
+  border-radius: 5px;
+  background-color: #a6a6a6;
+}
+
+.containerBlock {
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.sectionSpacing {
+  margin: 50px 0px;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-21 {
+  position: absolute;
+  z-index: 21;
+  top: 50px;
+  right: 50px;
+}
+
+.c-btn {
+  align-items: center;
+  border-radius: var(--c-secondaryBorderRadius);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  line-height: 36px;
+  min-width: 91px;
+  outline: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.c-btn.c-btn-primaryColor-outline {
+  border: 1px solid var(--c-primaryBorderColor);
+  background-color: transparent;
+  color: var(--c-white);
+}
+.c-btn.c-btn-primaryColor-outline:hover {
+  background-image: var(--secondaryColor);
+  border-color: transparent;
+}
+
+.mainBlock {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(./../image/background.jpg);
+}
+
+
+.mainBlock .mainBlockInner {
+  padding-top: 25px;
+  padding-bottom: 80px;
+}
+.mainBlock .mainBlockInner .container{
+   margin: 0px 40px;
+}
+.mainBlock .mainBlockInner .headerSection {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.mainBlock .mainBlockInner .headerSection .headerLogo {
+  /* width: 100px;
+  height: 50px; */
+    font-size: 37px;
+    color: transparent;
+    background-clip: text;
+     background-image: var(--ternaryColor);
+}
+.mainBlock .mainBlockInner .headerSection .themeIcon , .closebtn {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.mainBlock .mainBlockInner .headerSection .themeIcon svg {
+  width: 20px;
+  height: 20px;
+}
+.mainBlock .mainBlockInner .firstFold {
+  position: relative;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock {
+  width: 400px;
+  background-color: var(--bg-light);
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px 30px;
+  position: sticky;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlockInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 30px);
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .profileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 21px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .btnBlock {
+  padding: 10px 20px;
+  display: flex;
+  width: -moz-fit-content;
+  color: #000;
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .headingBlock {
+  margin-bottom: 20px;
+  background-color: var(--bg-light);
+  border-radius: 10px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock {
+  margin-bottom: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon {
+  width: 40px;
+  height: 40px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon:not(:last-child) {
+  margin-right: 10px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon svg {
+  width: 20px;
+  height: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock {
+  width: 100%;
+  background-color: #212425;
+  border-radius: 20px;
+  padding: 20px 15px;
+  margin: auto;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent:not(:first-child) {
+  border: 1px solid rgba(204, 204, 204, 0.2901960784);
+  border-left: unset;
+  border-right: unset;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent:last-child {
+  border-bottom: unset;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent .subText {
+  font-size: 12px;
+  color: var(--textColor);
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent .iconFrame {
+  background-color: var(--textColor);
+  border-radius: 2px;
+  padding: 5px;
+  display: flex;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent .iconFrame svg {
+  width: 24px;
+  height: 24px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock {
+  width: calc(100% - 400px);
+  max-width: calc(100% - 400px);
+  padding: 0px 15px 0px 20px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent .designBlockContent {
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent .designBlockContent .designIcon {
+  background-color: #ccc;
+  margin-right: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent .designBlockContent .designIcon svg {
+  width: 26px;
+  height: 26px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock {
+  padding: 30px;
+  background-color: #000;
+  border-radius: 16px;
+  gap: 20px;
+  display: flex;
+  margin-left: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner.active .contentBlock {
+  background-image: var(--secondaryColor);
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock {
+  border-radius: 12px;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #212425;
+  flex-direction: column;
+  cursor: pointer;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock:not(:first-child) {
+  margin-left: 20px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock svg {
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+  margin-bottom: 5px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock.active {
+  background: linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
+  background-color: #000;
+  border-radius: 16px;
+  padding: 60px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .subText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--textColor);
+  flex-direction: column;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .subHeading {
+  font-size: 24px;
+  /* margin-bottom: 20px; */
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlock {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock {
+  font-size: 40px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock .afterHeaderBlockEle {
+  position: relative;
+}
+.mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock .afterHeaderBlockEle::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  z-index: 9999999;
+  background-image: var(--secondaryColor);
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.mainBlock .mainBlockInner .formContainerInner {
+  padding: 60px 45px;
+  border-radius: 20px;
+  background-color: #212425;
+}
+.mainBlock .mainBlockInner .formContainerInner .titleBlock {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--textColor);
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+.mainBlock .mainBlockInner .formContainerInner .mainText {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-bottom: 45px;
+  &.projectBlock{
+    margin-bottom: 15px !important;
+    ~ .textIndent{
+      text-indent: 75px;
+    }
+  }
+}
+.mainBlock .mainBlockInner .formContainerInner .custamizeInput:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mainBlock .mainBlockInner .formContainerInner .custamizeInput .inputBlock {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b5b5b5;
+  background: transparent;
+  height: 15px;
+  transition: 0.3s;
+  transform-origin: top;
+  font-size: 14px;
+  color: var(--textColor);
+}
+.mainBlock .mainBlockInner .formContainerInner .custamizeInput .inputBlock:focus-within {
+  border-bottom: 1px solid rgb(254, 120, 120);
+  height: 40px;
+}
+.mainBlock .mainBlockInner .formContainerInner .custamizeInput .labelText {
+  color: var(--textColor);
+}
+.mainBlock .mainBlockInner .formContainerInner .custamizeInput .labelText:has(+ .inputBlock:focus-within) {
+  color: rgb(254, 120, 120);
+}
+
+#skillsBlockContent .imageCenterAlign{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#skillsBlockContent .imageCenterAlign .skillsImages{
+ width: 100px;
+ height: auto;
+}
+
+.cvBlockMain{
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./../image/bg-modified.jpeg);
+  /* transform: translate(-100vw , -100vh); */
+  transform: translateY(-100vh);
+  transition: all 1s ease-out;
+
+}
+
+.cvBlockMain.show{
+  /* transform: translate(0px, 0px);
+   */
+   transform: translateY(0px);
+}
+
+.cvBlockMain::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #000000db;
+  z-index: 9;
+
+}
+
+.cvBtnBlockContainer{
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.downloadBtnBlock{
+  align-items: center;
+  border-radius: var(--c-secondaryBorderRadius);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  line-height: 36px;
+  min-width: 91px;
+  outline: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  background-image: var(--secondaryColor);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pt-20{
+  padding-top: 20px;
+}
