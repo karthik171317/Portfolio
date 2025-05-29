@@ -1,4 +1,3 @@
-@import 'bootstrap/dist/css/bootstrap.css';
 :root {
   --primaryColorLight: #121120bf;
   --primaryColor: #121120;
@@ -268,62 +267,8 @@
   margin-right: 20px;
 }
 
-@media (max-width: 576px) {
-  .containerBlock {
-    max-width: 540px !important;
-  }
-}
-@media (max-width: 768px) {
-  .containerBlock {
-    max-width: 720px !important;
-  }
-}
 
-@media (max-width: 1200px) {
-  .containerBlock {
-    max-width: 1200px !important;
-  }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
-    padding: 60px 40px !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .mainBlock .mainBlockInner .firstFoldInner {
-    flex-direction: column;
-  }
-  .mainBlock .mainBlockInner .firstFold .stickyBlock {
-    width: 100% !important;
-    position: unset !important;
-    margin-bottom: 40px;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: unset !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock {
-    width: 100% !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock {
-    width: 100% !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
-    width: 100% !important;
-    padding: 40px 30px !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent {
-    grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock {
-    font-size: 30px !important;
-  }
-  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock .afterHeaderBlockEle::after {
-    width: 100px !important;
-  }
-}
 html {
   font-size: 16px;
   --ternaryColor: linear-gradient(180deg, #fa5252 0%, #e12a72 100%);
@@ -362,6 +307,10 @@ svg.iconsMode{
 }
 svg.iconsLightMode{
     fill: #fff;
+}
+
+.ml-10px{
+    margin-left: 10px;
 }
 
 .subHeading {
@@ -434,8 +383,8 @@ body.bodyElement {
 .z-index-21 {
   position: absolute;
   z-index: 21;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 20px;
 }
 
 .c-btn {
@@ -498,8 +447,10 @@ body.bodyElement {
     color: transparent;
     background-clip: text;
      background-image: var(--ternaryColor);
+     display: flex;
+     align-items: center;
 }
-.mainBlock .mainBlockInner .headerSection .themeIcon , .closebtn {
+.mainBlock   .themeIcon , .closebtn {
   margin-left: auto;
   width: 50px;
   height: 50px;
@@ -512,7 +463,14 @@ body.bodyElement {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
 }
-.mainBlock .mainBlockInner .headerSection .themeIcon svg {
+
+.closeBtnBlock{
+  position: relative;
+  z-index: 20;
+  padding-top: 30px;
+    padding-right: 30px;
+}
+.mainBlock  .themeIcon svg {
   width: 20px;
   height: 20px;
 }
@@ -535,7 +493,8 @@ body.bodyElement {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: calc(100% - 30px);
+  width: 100%;
+  
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .profileImage {
   width: 120px;
@@ -567,12 +526,16 @@ body.bodyElement {
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock {
   margin-bottom: 20px;
+  gap: 10px;
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon {
   width: 40px;
   height: 40px;
 }
-.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon:not(:last-child) {
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon:hover{
+  opacity: 0.8;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock a:not(:last-child) {
   margin-right: 10px;
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .socialIconBlock .socialIcon svg {
@@ -580,11 +543,13 @@ body.bodyElement {
   height: 20px;
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock {
-  width: 100%;
+  
   background-color: #212425;
   border-radius: 20px;
   padding: 20px 15px;
   margin: auto;
+  width: calc(100% - 30px);
+
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent {
   display: flex;
@@ -593,6 +558,11 @@ body.bodyElement {
   gap: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent.mailBlock .mainText {
+  width: calc(100% - 54px);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .mainBlock .mainBlockInner .firstFold .stickyBlock .detailedBlock .detailContent:not(:first-child) {
   border: 1px solid rgba(204, 204, 204, 0.2901960784);
@@ -659,7 +629,7 @@ body.bodyElement {
 .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock {
   border-radius: 12px;
   width: 84px;
-  height: 84px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -743,8 +713,12 @@ body.bodyElement {
   margin-bottom: 45px;
   &.projectBlock{
     margin-bottom: 15px !important;
+    a{
+      color:#53bdeb;
+      text-transform: capitalize;
+    }
     ~ .textIndent{
-      text-indent: 75px;
+      /* text-indent: 20px; */
     }
   }
 }
@@ -781,6 +755,7 @@ body.bodyElement {
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
 #skillsBlockContent .imageCenterAlign .skillsImages{
  width: 100px;
@@ -799,7 +774,8 @@ body.bodyElement {
   background-color: #fff;
   background-position: center;
   background-size: cover;
-  background-image: url(./../image/bg-modified.jpeg);
+  /* background-image: url(./../image/bg-modified.jpeg); */
+  background-image: url(./../image/background.jpg);
   /* transform: translate(-100vw , -100vh); */
   transform: translateY(-100vh);
   transition: all 1s ease-out;
@@ -818,13 +794,16 @@ body.bodyElement {
   width: 100%;
   height: 100%;
   top: 0;
-  background: #000000db;
+  background: #0000003d;
   z-index: 9;
 
 }
 
 .cvBtnBlockContainer{
-  position: relative;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   z-index: 20;
   display: flex;
   justify-content: center;
@@ -839,17 +818,112 @@ body.bodyElement {
   display: inline-flex;
   font-size: 1.4rem;
   font-weight: 700;
-  height: 35px;
+  height: 48px;
   justify-content: center;
   line-height: 36px;
   min-width: 91px;
   outline: 0;
-  padding: 0 20px;
-  font-size: 14px;
+  padding: 0 33px;
+  font-size: 18px;
   white-space: nowrap;
   background-image: var(--secondaryColor);
   color: #fff;
   text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
+    padding: 60px 40px !important;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .mainBlock .mainBlockInner .container{
+    margin: 0px 20px;
+  }
+
+  .mainBlock .mainBlockInner .headerSection{
+    margin-bottom: 20px;
+    padding: 10px 0px;
+  }
+  .mainBlock .mainBlockInner .firstFoldInner {
+    flex-direction: column;
+  }
+  .mainBlock .mainBlockInner .firstFold .stickyBlock {
+    width: calc(100% - 60px) !important;
+    position: unset !important;
+    margin-bottom: 10px;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock {
+    width: calc(100% - 60px) !important;
+    max-width: calc(100% - 60px) !important;
+    padding: unset !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock {
+    width: calc(100% + 20px) !important;
+    position: sticky;
+    top: 10px;
+    text-align: right;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock {
+    width: 100% !important;
+    padding: 20px;
+    background: #00000045;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock{
+    height: 40px;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock {
+    width: 100% !important;
+    padding: 40px 30px !important;
+  }
+ 
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock {
+    font-size: 30px !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .afterHeaderBlock .afterHeaderBlockEle::after {
+    width: 100px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock .gridBlockParent {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock #skillsBlockContent .gridBlockParent {
+    grid-template-columns: repeat(2, minmax(160px, 1fr)) !important;
+  }
+
+  #skillsBlockContent .imageCenterAlign .skillsImages{
+    width: 75px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock{
+    gap: 10px;
+    padding: 15px;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock .topNavInnerBlock .topNavInner .contentBlock{
+    width: auto;
+    padding: 0px 10px;
+    font-size: 12px;
+    height: 35px;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .bottomBlock #skillsBlockContent .gridBlockParent {
+    grid-template-columns: repeat(1, minmax(160px, 1fr)) !important;
+  }
+  .mainBlock .mainBlockInner .firstFold .rightSideBlock .topNavBlock{
+    width: calc(100% + 30px) !important;
+  }
 }
 
 .pt-20{
